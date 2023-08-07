@@ -1,38 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nexa-tech Landing Page
 
-## Getting Started
+Welcome to the landing page project for Nexa-tech, a corporate website built using Next.js and tailwindcss. This project utilizes various libraries such as react icons, framer motion, and react-scroll-observer to create an engaging and interactive user experience.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- **Frontend**: Next.js
+- **Styling**: Tailwind CSS
+- **Animation**: Framer Motion
+- **Icons**: React Icons
+- **Scroll Observing**: React Scroll Observer
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Smooth animations and transitions using Framer Motion.
+- Interactive components and icons with React Icons.
+- Scroll observing effects and animations with React Scroll Observer.
+- Responsive design and styling with Tailwind CSS.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/yourusername/nexa-tech-landing.git
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Screenshot 
+![image](https://github.com/JaiBhalla03/nexa-tech/assets/101990594/81b32b16-b2cc-4dff-9850-89721c21f958)
+![image](https://github.com/JaiBhalla03/nexa-tech/assets/101990594/a4f219f6-5e27-4c5b-b90a-c49dac595ca2)
+![image](https://github.com/JaiBhalla03/nexa-tech/assets/101990594/446b27f1-a22d-4a6d-9224-cf6e501d6e35)
+![image](https://github.com/JaiBhalla03/nexa-tech/assets/101990594/432b43a9-8670-474f-808e-9c71f1c149cb)
+![image](https://github.com/JaiBhalla03/nexa-tech/assets/101990594/b5912c7a-0a74-4f88-a4b6-191a3f646854)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Explore the Nexa-tech landing page in production by visiting the following link: [https://nexa-tech-khaki.vercel.app/](https://nexa-tech-khaki.vercel.app/)
 
-## Deploy on Vercel
+The live production version of the Nexa-tech landing page provides an opportunity to experience the website's features and user interface. Feel free to interact with the different sections, animations, and content to get a sense of the engaging user experience that Nexa-tech offers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To view the landing page in production, simply click on the provided link and enjoy the full Nexa-tech experience!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Explore Nexa-tech Landing Page](https://nexa-tech-khaki.vercel.app/)
+
+
+
+
+
