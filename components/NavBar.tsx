@@ -120,20 +120,13 @@ const NavBar = () => {
                         <span>Home</span>
                     </li>
                     <li className="py-4 w-full flex flex-col justify-center items-center py-2 px-4 hover:bg-gray-100 cursor-pointer" onClick={handleEventsToggle}>
-                        <span>Services</span>
-                        {isEventsOpen && (
-                            <div className="bg-gray-100 text-sm px-2 py-1 rounded mt-2">
-                                <p>Service-1</p>
-                                <p>Service-2</p>
-                                <p>Service-3</p>
-                            </div>
-                        )}
+                        <Link href={'/#services'}>Services</Link>
                     </li>
                     <li className="py-4 w-full flex flex-col justify-center items-center py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                        <span>About</span>
+                        <Link href={'/#about'}>About</Link>
                     </li>
                     <li onClick={otherClicks} className="py-4 w-full flex justify-center items-center py-2 px-4 hover:bg-gray-100 cursor-pointer">
-                        <span>Contact us</span>
+                        <Link href={'/#contact'}>Contact us</Link>
                     </li>
                 </ul>
             )}
