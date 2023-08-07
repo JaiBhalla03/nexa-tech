@@ -75,7 +75,7 @@ const NavBar = () => {
                         <span>Home</span>
                     </li>
                     <li className="relative hover:underline duration-75 cursor-pointer transition-all flex items-center" onClick={handleEventsToggle}>
-                        <span>Services</span>
+                        <Link href={'/#services'}>Services</Link>
                         {isEventsOpen && (
                             <motion.div
                                 initial={{y:-100,scale:0, opacity:0}}
@@ -91,10 +91,10 @@ const NavBar = () => {
                         )}
                     </li>
                     <li className="relative hover:underline duration-75 cursor-pointer transition-all flex items-center">
-                        <span>About</span>
+                        <Link href={'/#about'}>About</Link>
                     </li>
                     <li onClick={otherClicks} className="relative hover:underline duration-75 cursor-pointer transition-all flex items-center">
-                        <span>Contact us</span>
+                        <Link href={'/#contact'}>Contact us</Link>
                     </li>
                 </ul>
             </div>

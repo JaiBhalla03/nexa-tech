@@ -12,7 +12,7 @@ interface EventsCardProps {
 
 const EventsCard: React.FC<EventsCardProps> = ({ imag, eventName, eventDescription }) => {
     return (
-        <motion.div className={'min-w-full md:min-w-[60%] h-full rounded-[20px] md:rounded-[40px] select-none relative'}>
+        <motion.div id={'services'} className={'min-w-full md:min-w-[60%] h-full rounded-[20px] md:rounded-[40px] select-none relative'}>
             <Image src={imag} alt={''} className={'object-cover select-none w-full h-full rounded-[20px] md:rounded-[40px]'} />
             <div className={'absolute rounded-[20px] md:rounded-[40px] top-0 h-full w-full backdrop-blur-[2px] hover:backdrop-blur-0 duration-500 transition-all'}></div>
             <div className={'absolute flex items-center justify-center bottom-6 end-6 bg-white w-10 h-10 rounded-full cursor-pointer hover:-translate-y-1 duration-500 transition-all'}>

@@ -39,7 +39,7 @@ const Footer = () => {
         }
     }, [controls, inView])
     return (
-        <footer ref={ref} className={'p-2 flex flex-col items-center gap-8 md:p-10 overflow-hidden'}>
+        <footer id={'contact'} ref={ref} className={'p-2 flex flex-col items-center gap-8 md:p-10 overflow-hidden'}>
             <div className={'flex flex-col gap-8 justify-center items-center'}>
                 <h1 className={'text-3xl md:text-6xl italic tracking-tighter text-gray-800'}>Be the part of our team</h1>
                 <div className={'flex gap-8'}>
@@ -154,6 +154,11 @@ const Footer = () => {
                     </div>
                 </div>
             </motion.div>
+            <div className="text-center text-gray-500 mt-4">
+                <p className="text-lg">
+                    &copy; {new Date().getFullYear()} Nexa Tech. All rights reserved.
+                </p>
+            </div>
         </footer>
     );
 };
