@@ -40,7 +40,7 @@ const Footer = () => {
     return (
         <footer ref={ref} className={'p-2 flex flex-col items-center gap-8 md:p-10 overflow-hidden'}>
             <div className={'flex flex-col gap-8 justify-center items-center'}>
-                <h1 className={'text-3xl md:text-6xl italic tracking-tighter text-gray-800'}>Be the part of our broadcast</h1>
+                <h1 className={'text-3xl md:text-6xl italic tracking-tighter text-gray-800'}>Be the part of our team</h1>
                 <div className={'flex gap-8'}>
                     <motion.div className={'w-14 h-10 md:w-36 md:h-24 rounded-full relative'}
                                 animate={controls}

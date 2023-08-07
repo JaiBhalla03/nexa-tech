@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* The main scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(239, 239, 239); /* Set the color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145); /* Set the color of the scrollbar thumb */
+    border-radius: 10px; /* Set the border radius of the thumb */
+}

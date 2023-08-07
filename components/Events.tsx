@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import EventsCard from '@/components/EventsCard';
 import image1 from '../images/eventImage1.jpg';
-import image2 from '../images/eventImage2.jpeg';
+import image2 from '../images/eventImage2.jpg';
 import image3 from '../images/eventImage3.jpg';
 import { useInView } from 'react-intersection-observer';
 
@@ -59,8 +59,7 @@ const Events = () => {
                 initial="hidden"
             >
                 <div className="flex gap-1">
-                    <h1 className="tracking-tighter italic text-4xl md:text-6xl font-normal">Events Calendar</h1>
-                    <div className="flex flex-col justify-end text-sm font-semibold">Category</div>
+                    <h1 className="tracking-tighter italic text-4xl md:text-6xl font-normal">Services we provide</h1>
                 </div>
             </motion.div>
             <motion.div
@@ -74,21 +73,18 @@ const Events = () => {
                 <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className="flex gap-4 md:gap-8 h-full">
                     <EventsCard
                         imag={image1}
-                        eventDate="June 20, 2023"
-                        eventName="Tech Career Fair"
-                        eventDescription="Join us for an exciting opportunity to explore the latest tech trends."
+                        eventName="Digital Transformation Solutions"
+                        eventDescription="Revitalize operations through innovative digital solutions and streamlined processes."
                     />
                     <EventsCard
                         imag={image2}
-                        eventDate="July 2, 2023"
-                        eventName="Marketing Workshop"
-                        eventDescription="Learn effective marketing strategies from industry experts in this interactive workshop."
+                        eventName="AI Consulting Services"
+                        eventDescription="Leverage AI for data-driven insights and strategic decision-making advancements."
                     />
                     <EventsCard
                         imag={image3}
-                        eventDate="August 8, 2023"
-                        eventName="Finance Symposium"
-                        eventDescription="Dive into the world of finance and gain insights from top professionals."
+                        eventName="Cybersecurity Solutions"
+                        eventDescription="Protect assets with cutting-edge cybersecurity against evolving digital threats."
                     />
                 </motion.div>
             </motion.div>
