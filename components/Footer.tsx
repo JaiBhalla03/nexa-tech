@@ -7,6 +7,7 @@ import footerImage3 from '../images/footerImage3.jpg';
 import {motion, useAnimation} from 'framer-motion';
 import {useInView} from "react-intersection-observer";
 import {AiOutlineArrowRight} from "react-icons/ai";
+import {FaClock, FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone, FaTwitter} from "react-icons/fa";
 
 const Footer = () => {
     const controls = useAnimation();
@@ -82,27 +83,65 @@ const Footer = () => {
                 </div>
             </div>
             <motion.div
-                className={'relative w-full'}
+                className={'relative w-full h-screen md:h-[600px]'}
                 animate={controls}
                 variants={footerVariant}
                 initial='hidden'
             >
-                <Image src={footerImage} alt={''} className={'w-full h-96 md:h-full object-cover rounded-[20px] md:rounded-[40px]'}/>
+                <Image src={footerImage} alt={''} className={'w-full h-96 h-screen md:h-full object-cover rounded-[20px] md:rounded-[40px]'}/>
                 <div className={'absolute top-0 h-full w-full bg-black rounded-[20px] md:rounded-[40px] opacity-[40%]'}>
 
                 </div>
-                <div className={'flex flex-col items-center justify-around absolute top-0 rounded-[40px] backdrop-blur-sm w-full h-full'}>
+                <div className={'p-6 md:p-10 flex flex-col items-center justify-between absolute top-0 rounded-[40px] backdrop-blur-sm w-full h-full'}>
                     <div className={'text-3xl md:text-4xl md:text-5xl font-normal text-white'}>
                         JOIN NOW
                     </div>
-                    <form className={'flex gap-2 items-center flex-col md:flex-row w-[90%] md:w-[70%] justify-around'}>
-                        <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-full text-white placeholder-white h-10 md:h-16 w-56 md:w-72'} placeholder={'Your name'} type={'text'}/>
-                        <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-full text-white placeholder-white h-10 md:h-16 w-56 md:w-72'} placeholder={'Your email'} type={'text'}/>
-                        <button className={'hover:-translate-y-1 duration-500 transition-all p-1 h-10 md:h-16 rounded-full bg-black text-white w-28'}>Submit</button>
-                    </form>
+                    <div className={'flex flex-col-reverse md:flex-row justify-around w-full'}>
+                        <div className={'w-full md:w-1/2 flex flex-col h-full justify-center'}>
+                            <div className="items-center md:items-stretch flex flex-col gap-2 md:gap-6 w-full p-4">
+                                <div className="items-center font-thin md:border-b border-white flex text-md md:text-xl text-white gap-1">
+                                    <FaMapMarkerAlt className="contact-icon" />
+                                    <p>123 Innovation Street, Techville</p>
+                                </div>
+                                <div className="items-center font-thin md:border-b border-white flex text-md md:text-xl text-white gap-1">
+                                    <FaEnvelope className="contact-icon" />
+                                    <p>info@nexatech.com</p>
+                                </div>
+                                <div className="items-center font-thin md:border-b border-white flex text-md md:text-xl text-white gap-1">
+                                    <FaPhone className="contact-icon" />
+                                    <p>+1 (123) 456-7890</p>
+                                </div>
+                                <div className="items-center font-thin md:border-b border-white flex text-md md:text-xl text-white gap-1">
+                                    <FaClock className="contact-icon" />
+                                    <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                                </div>
+                                <div className="items-center font-thin md:border-b border-white flex text-md md:text-xl text-white gap-1">
+                                    <FaClock className="contact-icon" />
+                                    <p>Sat: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form className={'flex gap-2 items-center flex-col w-full md:w-[70%] justify-around'}>
+                            <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-2xl text-white placeholder-white h-10 md:h-16 w-full md:w-3/4'} placeholder={'Your name'} type={'text'}/>
+                            <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-2xl text-white placeholder-white h-10 md:h-16 w-full md:w-3/4'} placeholder={'Your email'} type={'text'}/>
+                            <input className={'focus:outline-none p-1 bg-white bg-opacity-[15%] text-center border border-white rounded-2xl text-white placeholder-white h-24 md:h-36 w-full md:w-3/4'} placeholder={'Your message'} type={'text'}/>
+                            <button className={'hover:-translate-y-1 duration-500 transition-all p-1 h-8 md:h-10 rounded-2xl bg-black text-white w-28'}>Submit</button>
+                        </form>
+                    </div>
                     <div className={'flex flex-col md:flex-row gap-4 justify-between w-full mx-auto w-11/12 border-t border-white pt-4'}>
-                        <div className={'font-bold text-gray-800'}>
-                            This will be a good experience
+                        <div className={'social-icons'}>
+                            <a href="#" className="social-icon">
+                                <FaTwitter className="icon" />
+                            </a>
+                            <a href="#" className="social-icon">
+                                <FaFacebook className="icon" />
+                            </a>
+                            <a href="#" className="social-icon">
+                                <FaInstagram className="icon" />
+                            </a>
+                            <a href="#" className="social-icon">
+                                <FaEnvelope className="icon" />
+                            </a>
                         </div>
                         <div className={'flex justify-between md:justify-normal md:gap-4'}>
                             <div className={'hover:-translate-y-1 duration-500 transition-all cursor-pointer px-1 bg-white font-thin rounded-full h-10 flex items-center'}>
